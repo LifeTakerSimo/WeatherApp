@@ -1,8 +1,15 @@
 //
-//  HourlyWeather.swift
-//  WeatherApp
 //
-//  Created by Simohamed Kabbou on 07/02/2024.
+//  WeatherAPP
+//
+//  Created by Mohamed Kabbou, Oueslati Mohamed-Amine, Salhani Mohamed.
 //
 
 import Foundation
+
+struct HourlyWeather: Identifiable, Codable {
+    let id = UUID()
+    let time: String
+    let temperature: Double
+    let weatherCode: Int
+}
